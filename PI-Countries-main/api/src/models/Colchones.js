@@ -19,10 +19,30 @@ module.exports = (sequelize) => {
       allowNull: false
     },
 
+    image: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
     stock: {
       type: DataTypes.INTEGER,
     },
+
+    peso: {
+      type: DataTypes.INTEGER,
+    },
+
+    largo: {
+      type: DataTypes.INTEGER,
+    },
+
+    alto: {
+      type: DataTypes.INTEGER,
+    },
+
+    ancho: {
+      type: DataTypes.INTEGER,
+    },
   },
-    { timestamps: false }),
-    cache
+    { timestamps: false });
 };
