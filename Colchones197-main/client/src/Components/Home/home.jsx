@@ -18,6 +18,8 @@ export default function Home(props){
 
     return(
         products[0] && products[0].price ? <div className="homeContainerss">
+                        {path === '/' ? <h2 className="homeTitle">Todos los productos</h2> : <h2 className="homeTitle">Resultados de la Busqueda</h2>}
+
             <div className="homeTable">
                 { products.map(a => a.stock < 0 ? null : 
                 <Card 
