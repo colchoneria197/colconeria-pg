@@ -1,0 +1,47 @@
+.card{
+    display: grid;
+    margin: 15px;
+}
+
+.card:hover{ 
+    transition: .2s;
+    transform: translate(-1%, -1%);
+    -webkit-box-shadow: 1px 6px 13px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 6px 13px -2px rgba(0,0,0,0.75);
+    box-shadow: 1px 6px 13px -2px rgba(0,0,0,0.75);
+}
+
+.cardLink:hover{
+    cursor: pointer;
+}
+
+.productImg{
+    position: relative;
+    left: 15%;
+}
+
+/* .productPrice{
+    display: flex;
+    text-align: center;
+}
+
+.productName{
+    display: flex;
+    text-align: center;
+}
+
+.productMid{
+    display: flex;
+    text-align: center;
+} */
+
+.BotonWsp{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        margin: 5px;
+    }
+}

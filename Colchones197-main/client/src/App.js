@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-// import Navbar from './components/navbar/navbar.jsx'
+import Navbar from './Components/Navbar/navbar.jsx'
 import Home from './Components/Home/home';
 
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <Navbar /> */}
+        <Navbar />
         <React.Fragment>
           <Switch>
             <Route exact path='/' component={Home} />
